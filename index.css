@@ -551,7 +551,7 @@ main {
                     }
 
                     & button:hover {
-                        background-color: darkorange;
+                        background-color: var(--emerald);
                     }
 
                     & button:active {
