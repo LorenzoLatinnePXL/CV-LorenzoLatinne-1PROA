@@ -1,6 +1,8 @@
 :root {
     --beige: #fffbf5;
     --softorange: #ecac57;
+    --darkorange: #dc8718;
+    --hoverorange: #edca9b;
     --quicksand: "Quicksand";
 }
 
@@ -18,9 +20,24 @@ body {
     font-family: var(--quicksand), sans-serif;
 }
 
-h2{
+h2 {
     font-size: 1.5rem;
     font-weight: normal;
+}
+
+.white-rounded-background {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.emphasize {
+    color: var(--darkorange);
+}
+
+.bold {
+    font-weight: bold;
 }
 
 header {
@@ -28,6 +45,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
     & .nav-bar {
         height: 100%;
@@ -82,16 +100,15 @@ main {
 
     & .personal-info-top {
         width: 100%;
-        height: 90vh;
+        height: auto;
         padding: 0 80px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
 
         & .personal-info-left {
-            width: 50%;
-            height: 100%;
+            height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -125,8 +142,8 @@ main {
         }
     }
 
-    & .personal-info-middle{
-        height: 300vh;
+    & .personal-info-middle {
+        height: auto;
         width: 100%;
 
         & .skills {
@@ -191,6 +208,7 @@ main {
 
         & .education {
             width: 100%;
+            height: 50vh;
             display: flex;
             justify-content: space-evenly;
             margin-bottom: 25px;
@@ -210,12 +228,12 @@ main {
 
                 & .timeline-item {
                     width: 20%;
-                    height: 25%;
+                    height: 5%;
                     position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: white;
+                    color: black;
 
                     & .above-timeline {
                         color: black;
@@ -232,59 +250,59 @@ main {
                     }
 
                     & p {
-                        color: white;
+                        color: black;
                         position: absolute;
                         top: 0;
                     }
                 }
 
                 & .first {
-                    background-color: blue;
+                    background-color: #F9E4C8;
                 }
 
                 & .first::before {
                     content: "";
                     position: absolute;
-                    top: -80px;
+                    top: -90px;
                     left: 0;
                     height: 80px;
-                    border-left: 2px solid black;
+                    border-left: 2px solid #000000;
                 }
 
                 & .second {
-                    background-color: red;
+                    background-color: #F3C891;
                 }
 
                 & .second::before {
                     content: "";
                     position: absolute;
-                    top: 19px;
+                    top: 30px;
                     left: 0;
                     height: 70px;
                     border-left: 2px solid black;
                 }
 
                 & .third {
-                    background-color: orange;
+                    background-color: #ECAC57;
                 }
 
                 & .third::before {
                     content: "";
                     position: absolute;
-                    top: -80px;
+                    top: -90px;
                     left: 0;
                     height: 80px;
                     border-left: 2px solid black;
                 }
 
                 & .fourth {
-                    background-color: green;
+                    background-color: #DC8718;
                 }
 
                 & .fourth::before {
                     content: "";
                     position: absolute;
-                    top: 19px;
+                    top: 30px;
                     left: 0;
                     height: 70px;
                     border-left: 2px solid black;
@@ -294,6 +312,7 @@ main {
 
         & .experience {
             width: 100%;
+            height: auto;
             display: flex;
             justify-content: space-evenly;
             margin-bottom: 25px;
@@ -305,33 +324,101 @@ main {
                 margin-right: 50px;
             }
 
-            & .experience-list{
+            & .experience-list {
                 width: 80%;
+
+                & ul {
+                    list-style-type: circle;
+
+                    & ul {
+                        list-style-type: none;
+
+                        & .job-skill {
+                            display: block;
+                            font-weight: bold;
+                            color: #333;
+                            transition: color 0.5s ease-in-out;
+                            margin: 10px 0;
+                        }
+
+                        & .job-skill:hover {
+                            color: var(--softorange);
+                        }
+                    }
+                }
             }
         }
 
-        & .work-history {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+        & .contact-form {
             width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
 
-            & ul {
-                list-style-type: circle;
+            & .section-title {
+                text-align: center;
+            }
 
-                & ul {
-                    list-style-type: none;
+            & .form-div {
+                width: 80%;
+                height: 50vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
 
-                    & .job-skill {
-                        display: block;
-                        font-weight: bold;
-                        text-decoration: underline;
-                        color: #333;
-                        transition: color 0.5s ease-in-out;
+                & form {
+                    width: 100%;
+
+                    & .form-item {
+                        margin-bottom: 15px;
                     }
 
-                    & .job-skill:hover {
-                        color: #007bff;
+                    & label {
+                        display: block;
+                        margin-bottom: 5px;
+                        color: #555;
+                    }
+
+                    & input, textarea, button {
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        font-size: 16px;
+                    }
+
+                    & input::placeholder, textarea::placeholder {
+                        font-family: var(--quicksand), sans-serif;
+                    }
+
+                    & textarea {
+                        resize: vertical;
+                        height: 100px;
+                    }
+
+                    & button {
+                        background-color: var(--softorange);
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 18px;
+                    }
+
+                    & button:hover {
+                        background-color: darkorange;
+                    }
+
+                    & button:active {
+                        background-color: black;
+                    }
+
+                    & .form-message {
+                        text-align: center;
+                        margin-top: 10px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -340,12 +427,8 @@ main {
 }
 
 
-
-
-
 footer {
     width: 100%;
-    height: 6vh;
     background-color: var(--softorange);
 
     .footer-content {
@@ -355,5 +438,13 @@ footer {
         width: 100%;
         height: 100%;
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        & .personal-info-top{
+            flex-direction: column;
+        }
     }
 }
