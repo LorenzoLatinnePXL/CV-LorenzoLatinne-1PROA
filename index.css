@@ -463,6 +463,52 @@ main {
                     border-left: 2px solid black;
                 }
             }
+
+            & .education-timeline-mobile {
+                display: none;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+
+                & .mobile-years{
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    color: white;
+                    text-align: center;
+
+                    & .mobile-year1 {
+                        width: 100%;
+                        height: 25%;
+                        background: var(--lightcoral);
+                    }
+
+                    & .mobile-year2 {
+                        width: 100%;
+                        height: 25%;
+                        background: var(--carolinablue);
+                    }
+
+                    & .mobile-year3 {
+                        width: 100%;
+                        height: 25%;
+                        background: var(--vistablue);
+                    }
+
+                    & .mobile-year4 {
+                        width: 100%;
+                        height: 25%;
+                        background: var(--emerald);
+                    }
+
+                    & .mobile-description {
+                        color: black;
+                    }
+                }
+
+            }
         }
 
         & .experience {
@@ -716,7 +762,7 @@ footer {
             & .experience {
 
                 & .section-title {
-
+                    margin-right: 0;
                 }
 
                 & .experience-list {
@@ -734,6 +780,21 @@ footer {
                             }
                         }
                     }
+                }
+            }
+
+            & .education {
+
+                & .section-title {
+                    margin-right: 0;
+
+                }
+                & .education-timeline {
+                    display: none;
+                }
+
+                & .education-timeline-mobile{
+                    display: flex;
                 }
             }
         }
