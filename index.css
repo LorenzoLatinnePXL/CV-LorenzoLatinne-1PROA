@@ -202,7 +202,7 @@ main {
         align-items: center;
         justify-content: space-evenly;
 
-        & .personal-info-left {
+        & .personal-info-top-left {
             height: 90vh;
             display: flex;
             align-items: center;
@@ -268,7 +268,7 @@ main {
                 margin-bottom: 20%;
             }
 
-            & img {
+            & .doodle-scribble {
                 position: absolute;
                 z-index: -1;
                 width: 30%;
@@ -723,7 +723,7 @@ footer {
             flex-direction: column;
             padding: 0;
 
-            & .personal-info-left{
+            & .personal-info-top-left{
                 height: 75vh;
                 margin-top: 40px;
             }
@@ -779,6 +779,10 @@ footer {
                         }
                     }
                 }
+
+                & .doodle-triangles {
+                    display: none;
+                }
             }
 
             & .education {
@@ -795,10 +799,6 @@ footer {
                     display: flex;
                 }
             }
-        }
-
-        & .doodle-triangles {
-            display: none;
         }
     }
 
