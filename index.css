@@ -53,7 +53,7 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.white-text{
+.white-text {
     color: white;
 }
 
@@ -109,7 +109,7 @@ header {
             font-weight: 200;
             font-size: 2rem;
 
-            & a{
+            & a {
                 text-decoration: none;
                 color: black;
                 display: block;
@@ -145,7 +145,7 @@ header {
                         padding: 4px 0;
                     }
 
-                    & a::before{
+                    & a::before {
                         content: "";
                         width: 100%;
                         height: 4px;
@@ -154,7 +154,7 @@ header {
                         bottom: 0;
                         background: var(--carolinablue);
                         transition: 0.5s transform ease;
-                        transform: scale3d(0,1,1);
+                        transform: scale3d(0, 1, 1);
                         transform-origin: 0 50%;
                     }
 
@@ -211,14 +211,14 @@ main {
             flex-direction: column;
             position: relative;
 
-            & .doodle-star{
+            & .doodle-star {
                 position: absolute;
                 height: 10%;
                 top: 0;
                 left: 86%;
             }
 
-            & .profile-link{
+            & .profile-link {
                 height: 70%;
                 margin-top: 20px;
 
@@ -262,9 +262,19 @@ main {
             justify-content: center;
             flex-direction: column;
             gap: 5%;
+            position: relative;
 
-            & p{
+            & p {
                 margin-bottom: 20%;
+            }
+
+            & img {
+                position: absolute;
+                z-index: -1;
+                width: 30%;
+                top: 70%;
+                left: 70%;
+                rotate: 120deg;
             }
         }
     }
@@ -376,7 +386,7 @@ main {
                     justify-content: center;
                     color: black;
 
-                    & .white-text{
+                    & .white-text {
                         color: white;
                     }
 
@@ -466,7 +476,7 @@ main {
             position: relative;
             z-index: 1;
 
-            & .doodle-triangles{
+            & .doodle-triangles {
                 position: absolute;
                 z-index: -1;
                 height: 25%;
@@ -544,9 +554,10 @@ main {
                         border: 1px solid #ccc;
                         border-radius: 4px;
                         font-size: 16px;
+                        font-family: var(--quicksand), sans-serif;
                     }
 
-                    & input::placeholder, textarea::placeholder, button{
+                    & input::placeholder, textarea::placeholder, button {
                         font-family: var(--quicksand), sans-serif;
                     }
 
@@ -596,27 +607,27 @@ footer {
         height: 100%;
         color: white;
 
-        & .footer-left{
+        & .footer-left {
             width: 25%;
             display: flex;
             align-items: center;
             justify-content: center;
 
-            & .caligraphy{
+            & .caligraphy {
                 font-family: var(--amsterdam), sans-serif;
                 font-size: 1rem;
                 margin-right: 10px;
             }
         }
 
-        & .footer-middle{
+        & .footer-middle {
             width: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        & .footer-right{
+        & .footer-right {
             width: 25%;
             display: flex;
             align-items: center;
@@ -645,10 +656,63 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        height: 35vh;
+        position: relative;
+
+        & .nav-bar {
+            & .nav-middle {
+                & ul {
+                    & li {
+                        display: block;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+
     main {
         & .personal-info-top {
             flex-direction: column;
         }
+
+        & .personal-info-middle {
+            & .skills {
+                & .section-title {
+                    & .doodle-loops {
+                        height: 10%;
+                    }
+                }
+            }
+
+            & .experience {
+
+                & .section-title {
+
+                }
+
+                & .experience-list {
+
+                    & ul {
+
+                        & li {
+
+                            & h3 {
+
+                                & .emphasize4 {
+                                    display: block;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .doodle-triangles {
+            display: none;
+        }
     }
 }
-
