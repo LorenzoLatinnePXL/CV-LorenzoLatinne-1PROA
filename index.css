@@ -242,7 +242,7 @@ main {
                 display: flex;
                 height: 100%;
                 width: 100%;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: space-evenly;
 
                 & a {
@@ -262,6 +262,10 @@ main {
             justify-content: center;
             flex-direction: column;
             gap: 5%;
+
+            & p{
+                margin-bottom: 20%;
+            }
         }
     }
 
