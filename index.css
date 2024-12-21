@@ -704,7 +704,6 @@ footer {
 @media screen and (max-width: 480px) {
     header {
         height: auto;
-        position: relative;
 
         & .nav-bar {
 
@@ -747,8 +746,7 @@ footer {
                 flex-direction: column;
 
                 & .skills-table{
-                    width: 100%;
-                    margin-bottom: 40px;
+                    display: none;
                 }
 
                 & .section-title {
