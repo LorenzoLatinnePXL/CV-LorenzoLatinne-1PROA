@@ -247,7 +247,7 @@ main {
 
                 & a {
 
-                    & img {
+                    & .doodle-scribble {
                         width: 75%;
                     }
                 }
@@ -657,15 +657,16 @@ footer {
 
 @media screen and (max-width: 480px) {
     header {
-        height: 35vh;
+        height: auto;
         position: relative;
 
         & .nav-bar {
+
             & .nav-middle {
                 & ul {
                     & li {
                         display: block;
-                        margin: 20px;
+                        margin: 5px;
                     }
                 }
             }
@@ -675,11 +676,37 @@ footer {
     main {
         & .personal-info-top {
             flex-direction: column;
+            padding: 0;
+
+            & .personal-info-left{
+                height: 75vh;
+                margin-top: 40px;
+            }
+
+            & .personal-info-top-right{
+                width: 75%;
+
+                & p {
+                    width: 100%;
+                }
+
+                & .doodle-scribble {
+                    display: none;
+                }
+            }
         }
 
         & .personal-info-middle {
             & .skills {
+                flex-direction: column;
+
+                & .skills-table{
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
                 & .section-title {
+                    margin-bottom: 20px;
                     & .doodle-loops {
                         height: 10%;
                     }
@@ -713,6 +740,24 @@ footer {
 
         & .doodle-triangles {
             display: none;
+        }
+    }
+
+    footer {
+        .footer-content{
+            flex-direction: column;
+
+            & .footer-left{
+                width: 100%;
+            }
+
+            & .footer-middle {
+                width: 100%;
+            }
+
+            & .footer-right {
+                width: 100%;
+            }
         }
     }
 }
