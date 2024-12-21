@@ -14,12 +14,18 @@
 
     /*Fonts*/
     --quicksand: "Quicksand";
+    --amsterdam: "AmsterdamFour";
 
     /*Font size*/
     font-size: 16px;
 
     /*scroll-behavior*/
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "AmsterdamFour";
+    src: url('assets/fonts/AmsterdamFour.ttf') format('truetype');
 }
 
 * {
@@ -99,6 +105,9 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: var(--amsterdam), sans-serif;
+            font-weight: 200;
+            font-size: 2rem;
 
             & a{
                 text-decoration: none;
@@ -573,6 +582,7 @@ main {
 footer {
     width: 100%;
     background-color: var(--carolinablue);
+    font-family: var(--quicksand), sans-serif;
 
     .footer-content {
         display: flex;
@@ -580,7 +590,6 @@ footer {
         align-items: center;
         width: 100%;
         height: 100%;
-        padding: 20px;
         color: white;
 
         & .footer-left{
@@ -588,6 +597,12 @@ footer {
             display: flex;
             align-items: center;
             justify-content: center;
+
+            & .caligraphy{
+                font-family: var(--amsterdam), sans-serif;
+                font-size: 1rem;
+                margin-right: 10px;
+            }
         }
 
         & .footer-middle{
