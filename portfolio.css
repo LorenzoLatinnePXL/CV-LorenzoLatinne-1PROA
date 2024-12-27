@@ -21,6 +21,7 @@
 
     /*scroll-behavior*/
     scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
 }
 
 @font-face {
@@ -186,6 +187,61 @@ header {
             color: white;
             background: var(--carolinablue);
         }
+    }
+}
+
+main {
+    padding: 0 25%;
+    margin: 16px auto;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background-color: #ffffff;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #dddddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    caption {
+        font-size: 1.5em;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .week-col {
+        width: 15%;
+    }
+
+    .content-col {
+        width: 60%;
+    }
+
+    .deadline-col {
+        width: 25%;
+    }
+
+    .deadline-task, .pe-test {
+        color: var(--lightcoral);
+    }
+
+    .holiday-row {
+        text-align: center;
+        background: var(--atomictangerine);
+        color: white;
     }
 }
 
