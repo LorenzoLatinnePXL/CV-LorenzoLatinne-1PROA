@@ -21,6 +21,7 @@
 
     /*scroll-behavior*/
     scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
 }
 
 @font-face {
@@ -683,8 +684,9 @@ main {
             }
         }
     }
-
 }
+
+
 footer {
     width: 100%;
     background-color: var(--carolinablue);
@@ -746,7 +748,7 @@ footer {
     }
 }
 
-@media screen and (width < 1920px) {
+@media screen and (width < 1280px) {
     header {
         height: auto;
 
@@ -762,7 +764,10 @@ footer {
             }
         }
     }
+}
 
+
+@media screen and (width < 1920px) {
     main {
         & .personal-info-top {
             flex-direction: column;
