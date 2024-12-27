@@ -764,6 +764,20 @@ footer {
             }
         }
     }
+
+    footer {
+        .footer-content {
+            .footer-right {
+                a {
+                    width: 50%;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

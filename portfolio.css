@@ -227,20 +227,20 @@ main {
     }
 
     .content-col {
-        width: 60%;
+        width: 55%;
     }
 
     .deadline-col {
-        width: 25%;
+        width: 30%;
     }
 
     .deadline-task, .pe-test {
-        color: var(--lightcoral);
+        color: var(--vistablue);
     }
 
     .holiday-row {
         text-align: center;
-        background: var(--atomictangerine);
+        background: var(--vistablue);
         color: white;
     }
 }
