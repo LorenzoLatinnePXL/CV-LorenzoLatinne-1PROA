@@ -382,11 +382,11 @@ main {
                         margin-bottom: 2%;
                     }
 
-                    & .mobile-hard-skills-title {
+                    & .mobile-skills-title {
                         font-weight: 600;
                     }
 
-                    & .mobile-soft-skills-title {
+                    & .mobile-skills-title {
                         font-weight: 600;
                     }
                 }
@@ -802,6 +802,17 @@ footer {
                         & h3 {
                             margin-bottom: 20px;
                             margin-top: 20px;
+                        }
+
+                        & .mobile-skills-title {
+                            position: relative;
+                            left: 15%;
+                            color: var(--vistablue);
+                        }
+
+                        & .mobile-skills-description {
+                            position: relative;
+                            left: 15%;
                         }
                     }
                 }
