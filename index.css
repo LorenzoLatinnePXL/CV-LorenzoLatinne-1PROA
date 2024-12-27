@@ -796,10 +796,17 @@ footer {
 
                 & .mobile-skills-div {
                     display: flex;
+
+                    & .mobile-skills {
+
+                        & h3 {
+                            margin-bottom: 20px;
+                            margin-top: 20px;
+                        }
+                    }
                 }
 
                 & .section-title {
-                    margin-bottom: 20px;
 
                     & .doodle-loops {
                         height: 10%;
