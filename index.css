@@ -17,7 +17,7 @@
     --amsterdam: "AmsterdamFour";
 
     /*Font size*/
-    font-size: 16px;
+    font-size: 15px;
 
     /*scroll-behavior*/
     scroll-behavior: smooth;
@@ -747,6 +747,7 @@ footer {
 }
 
 @media screen and (width < 1920px) {
+
     header {
         height: auto;
 
