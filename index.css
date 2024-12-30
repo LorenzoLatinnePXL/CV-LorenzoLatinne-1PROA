@@ -122,7 +122,8 @@ header {
             justify-content: center;
             font-family: var(--amsterdam), sans-serif;
             font-weight: 200;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
 
             & a {
                 text-decoration: none;
@@ -131,6 +132,12 @@ header {
                 position: relative;
                 padding: 4px 0;
                 width: 70%;
+                height: 100%;
+
+                img {
+                    height: 50%;
+                    margin: auto;
+                }
             }
         }
 
@@ -703,6 +710,8 @@ main {
 
 
 footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
     background-color: var(--carolinablue);
     font-family: var(--quicksand), sans-serif;
@@ -737,6 +746,7 @@ footer {
 
         & .footer-right {
             width: 25%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
