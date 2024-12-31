@@ -48,9 +48,13 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
 }
 
 .white-rounded-background {
@@ -111,7 +115,7 @@ header {
             width: 20%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             font-family: var(--amsterdam), sans-serif;
             font-weight: 200;
             font-size: 1.5rem;
@@ -120,11 +124,11 @@ header {
             & a {
                 text-decoration: none;
                 color: black;
-                display: block;
-                position: relative;
-                padding: 4px 0;
-                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 height: 100%;
+                width: 50%;
 
                 img {
                     height: 50%;
@@ -135,7 +139,7 @@ header {
 
         & .nav-middle {
             height: 100%;
-            width: 50%;
+            width: 60%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -183,7 +187,7 @@ header {
 
         & .nav-right {
             height: 100%;
-            width: 25%;
+            width: 20%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -205,65 +209,168 @@ header {
 }
 
 main {
-    padding: 0 25%;
+    padding: 0 10%;
     margin: 16px auto;
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        background-color: #ffffff;
+    section {
+        margin-bottom: 3rem;
     }
 
-    th, td {
-        padding: 12px;
-        text-align: left;
-        border: 1px solid #dddddd;
+    .intro {
+
+        & p {
+            margin-bottom: 1rem;
+        }
     }
 
-    th {
-        background-color: #f2f2f2;
-        font-weight: bold;
+    .log-book{
+
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff;
+
+            & th, td {
+                padding: 12px;
+                text-align: left;
+                border: 1px solid #dddddd;
+            }
+
+            & th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+            }
+
+            & tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            & .week-col {
+                width: 15%;
+            }
+
+            & .content-col {
+                width: 50%;
+            }
+
+            & .deadline-col {
+                width: 35%;
+            }
+
+            & .deadline-task, .pe-test {
+                color: var(--lightcoral);
+                font-weight: 600;
+            }
+
+            & .holiday-row {
+                text-align: center;
+                background: var(--vistablue);
+                color: white;
+            }
+        }
     }
 
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
+    .growth {
+
+        & p {
+            margin-bottom: 1rem;
+        }
+
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff;
+
+            & th, td {
+                padding: 12px;
+                text-align: left;
+                border: 1px solid #dddddd;
+            }
+
+            & th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+                background: var(--atomictangerine);
+                color: white;
+            }
+
+            & .title-col {
+                width: 100%;
+            }
+
+            & .role-col {
+                width: 15%;
+                font-weight: bold;
+                background-color: #f9f9f9;
+            }
+
+            & .content-col {
+                width: 85%;
+                font-weight: bold;
+                background-color: #f9f9f9;
+            }
+
+            & .description-col {
+                width: 85%;
+            }
+        }
+
+        & ol {
+
+            & li {
+                margin-left: 15px;
+            }
+        }
+
+        & .competencies {
+
+            & p {
+                margin-bottom: 1rem;
+            }
+        }
+
+        & .position {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+
+            & .position-roles{
+                width: 33%;
+
+            }
+        }
+
+
     }
 
-    caption {
-        font-size: 1.5em;
-        margin: 10px;
-        font-weight: bold;
-    }
 
-    .week-col {
-        width: 15%;
-    }
-
-    .content-col {
-        width: 50%;
-    }
-
-    .deadline-col {
-        width: 35%;
-    }
-
-    .deadline-task, .pe-test {
-        color: var(--vistablue);
-    }
-
-    .holiday-row {
-        text-align: center;
-        background: var(--vistablue);
-        color: white;
-    }
 }
 
 @media screen and (width < 1280px) {
+
+    :root{
+        scroll-behavior: smooth;
+        scroll-padding-top: 20vh;
+    }
+
     header {
-        height: auto;
+        height: 20vh;
 
         & .nav-bar {
+
+            & .nav-left {
+                height: 50%;
+                flex-direction: column;
+
+                & img {
+                    height: 50%;
+                }
+            }
 
             & .nav-middle {
                 & ul {

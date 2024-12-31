@@ -119,7 +119,7 @@ header {
             width: 20%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             font-family: var(--amsterdam), sans-serif;
             font-weight: 200;
             font-size: 1.5rem;
@@ -128,11 +128,11 @@ header {
             & a {
                 text-decoration: none;
                 color: black;
-                display: block;
-                position: relative;
-                padding: 4px 0;
-                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 height: 100%;
+                width: 50%;
 
                 img {
                     height: 50%;
@@ -774,10 +774,25 @@ footer {
 }
 
 @media screen and (width < 1280px) {
+
+    :root{
+        scroll-behavior: smooth;
+        scroll-padding-top: 20vh;
+    }
+
     header {
-        height: auto;
+        height: 20vh;
 
         & .nav-bar {
+
+            & .nav-left {
+                height: 50%;
+                flex-direction: column;
+
+                & img {
+                    height: 50%;
+                }
+            }
 
             & .nav-middle {
                 & ul {
@@ -872,7 +887,7 @@ footer {
             & .experience {
 
                 & .section-title {
-                    margin-right: 0;
+                    margin-right: 20px;
                 }
 
                 & .experience-list {
