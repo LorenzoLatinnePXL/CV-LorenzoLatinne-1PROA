@@ -47,6 +47,12 @@ h2 {
     font-weight: normal;
 }
 
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
 .white-rounded-background {
     background: #ffffff;
     padding: 20px;
@@ -102,13 +108,14 @@ header {
 
         & .nav-left {
             height: 100%;
-            width: 25%;
+            width: 20%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: var(--amsterdam), sans-serif;
             font-weight: 200;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
 
             & a {
                 text-decoration: none;
@@ -116,6 +123,13 @@ header {
                 display: block;
                 position: relative;
                 padding: 4px 0;
+                width: 70%;
+                height: 100%;
+
+                img {
+                    height: 50%;
+                    margin: auto;
+                }
             }
         }
 
@@ -227,11 +241,11 @@ main {
     }
 
     .content-col {
-        width: 55%;
+        width: 50%;
     }
 
     .deadline-col {
-        width: 30%;
+        width: 35%;
     }
 
     .deadline-task, .pe-test {
