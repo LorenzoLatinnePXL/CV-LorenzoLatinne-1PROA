@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: "AmsterdamFour";
-    src: url('assets/fonts/AmsterdamFour.ttf') format('truetype');
+    src: url('./assets/fonts/AmsterdamFour.ttf') format('truetype');
 }
 
 * {
@@ -194,54 +194,60 @@ main {
     padding: 0 25%;
     margin: 16px auto;
 
+    .introduction {
+
+        & p {
+            margin: 15px auto;
+        }
+    }
+
     table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
         background-color: #ffffff;
-    }
 
-    th, td {
-        padding: 12px;
-        text-align: left;
-        border: 1px solid #dddddd;
-    }
+        & ul {
+            list-style: none;
+        }
 
-    th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
+        & th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #dddddd;
+        }
 
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
+        & th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
 
-    caption {
-        font-size: 1.5em;
-        margin: 10px;
-        font-weight: bold;
-    }
+        & tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
 
-    .week-col {
-        width: 15%;
-    }
+        & .week-col {
+            width: 15%;
+        }
 
-    .content-col {
-        width: 55%;
-    }
+        & .content-col {
+            width: 55%;
+        }
 
-    .deadline-col {
-        width: 30%;
-    }
+        & .deadline-col {
+            width: 30%;
+        }
 
-    .deadline-task, .pe-test {
-        color: var(--vistablue);
-    }
+        & .deadline-task, .pe-test {
+            color: var(--atomictangerine);
+            font-weight: bold;
+        }
 
-    .holiday-row {
-        text-align: center;
-        background: var(--vistablue);
-        color: white;
+        & .holiday-row {
+            text-align: center;
+            background: var(--vistablue);
+            color: white;
+        }
     }
 }
 
