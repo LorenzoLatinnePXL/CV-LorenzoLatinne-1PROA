@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: "AmsterdamFour";
-    src: url('./assets/fonts/AmsterdamFour.ttf') format('truetype');
+    src: url('assets/fonts/AmsterdamFour.ttf') format('truetype');
 }
 
 * {
@@ -45,6 +45,12 @@ body {
 h2 {
     font-size: 1.5rem;
     font-weight: normal;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .white-rounded-background {
@@ -102,13 +108,14 @@ header {
 
         & .nav-left {
             height: 100%;
-            width: 25%;
+            width: 20%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: var(--amsterdam), sans-serif;
             font-weight: 200;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
 
             & a {
                 text-decoration: none;
@@ -116,6 +123,13 @@ header {
                 display: block;
                 position: relative;
                 padding: 4px 0;
+                width: 70%;
+                height: 100%;
+
+                img {
+                    height: 50%;
+                    margin: auto;
+                }
             }
         }
 
@@ -194,60 +208,54 @@ main {
     padding: 0 25%;
     margin: 16px auto;
 
-    .introduction {
-
-        & p {
-            margin: 15px auto;
-        }
-    }
-
     table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
         background-color: #ffffff;
+    }
 
-        & ul {
-            list-style: none;
-        }
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #dddddd;
+    }
 
-        & th, td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #dddddd;
-        }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
 
-        & th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
 
-        & tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+    caption {
+        font-size: 1.5em;
+        margin: 10px;
+        font-weight: bold;
+    }
 
-        & .week-col {
-            width: 15%;
-        }
+    .week-col {
+        width: 15%;
+    }
 
-        & .content-col {
-            width: 55%;
-        }
+    .content-col {
+        width: 50%;
+    }
 
-        & .deadline-col {
-            width: 30%;
-        }
+    .deadline-col {
+        width: 35%;
+    }
 
-        & .deadline-task, .pe-test {
-            color: var(--atomictangerine);
-            font-weight: bold;
-        }
+    .deadline-task, .pe-test {
+        color: var(--vistablue);
+    }
 
-        & .holiday-row {
-            text-align: center;
-            background: var(--vistablue);
-            color: white;
-        }
+    .holiday-row {
+        text-align: center;
+        background: var(--vistablue);
+        color: white;
     }
 }
 
