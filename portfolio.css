@@ -191,19 +191,33 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-        }
+            gap: 5%;
 
-        & .contact-button {
-            text-decoration: none;
-            color: black;
-            padding: 10px;
-            border: 1px solid var(--carolinablue);
-            border-radius: 30px;
-        }
+            & .contact-button {
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                border: 1px solid var(--carolinablue);
+                border-radius: 30px;
+            }
 
-        & .contact-button:hover {
-            color: white;
-            background: var(--carolinablue);
+            & .contact-button:hover {
+                color: white;
+                background: var(--carolinablue);
+            }
+
+            & .switch-button {
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                border: 1px solid var(--atomictangerine);
+                border-radius: 30px;
+            }
+
+            & .switch-button:hover {
+                color: white;
+                background: var(--atomictangerine);
+            }
         }
     }
 }
@@ -277,47 +291,6 @@ main {
             margin-bottom: 1rem;
         }
 
-        & table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background-color: #ffffff;
-
-            & th, td {
-                padding: 12px;
-                text-align: left;
-                border: 1px solid #dddddd;
-            }
-
-            & th {
-                background-color: #f2f2f2;
-                font-weight: bold;
-                text-align: center;
-                background: var(--atomictangerine);
-                color: white;
-            }
-
-            & .title-col {
-                width: 100%;
-            }
-
-            & .role-col {
-                width: 15%;
-                font-weight: bold;
-                background-color: #f9f9f9;
-            }
-
-            & .content-col {
-                width: 85%;
-                font-weight: bold;
-                background-color: #f9f9f9;
-            }
-
-            & .description-col {
-                width: 85%;
-            }
-        }
-
         & ol {
 
             & li {
@@ -330,18 +303,64 @@ main {
             & p {
                 margin-bottom: 1rem;
             }
+
+            & table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                background-color: #ffffff;
+
+                & th, td {
+                    padding: 12px;
+                    text-align: left;
+                    border: 1px solid #dddddd;
+                }
+
+                & th {
+                    background-color: #f2f2f2;
+                    font-weight: bold;
+                    text-align: center;
+                    background: var(--atomictangerine);
+                    color: white;
+                }
+
+                & .title-col {
+                    width: 100%;
+                }
+
+                & .role-col {
+                    width: 15%;
+                    font-weight: bold;
+                    background-color: #f9f9f9;
+                }
+
+                & .content-col {
+                    width: 85%;
+                    font-weight: bold;
+                    background-color: #f9f9f9;
+                }
+
+                & .description-col {
+                    width: 85%;
+                }
+            }
         }
 
         & .position {
             display: flex;
+            flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
             width: 100%;
 
             & .position-roles{
-                width: 33%;
+                width: 100%;
+                margin-bottom: 1rem;
 
+                & .role-title{
+                    text-align: center;
+                }
             }
         }
 
