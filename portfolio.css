@@ -434,6 +434,7 @@ main {
 
                 & .link-to-project {
                     text-align: center;
+                    align-self: flex-end;
 
                     & a {
                         text-decoration: none;
